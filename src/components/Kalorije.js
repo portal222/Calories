@@ -1080,7 +1080,7 @@ const Kalorije = () => {
                         </td>   
                     </tr>
                     <tr className="kupus">
-                        <td className="naslov">Tikvica</td>
+                        <td className="naslov">Tikvica tikva</td>
                         <td className="protein">
                             <input type="number"
                                 value={inputValue43}
@@ -1101,7 +1101,7 @@ const Kalorije = () => {
                         </td>   
                     </tr>
                     <tr className="kupus">
-                        <td className="naslov">Praziluk</td>
+                        <td className="naslov">Praziluk prazniluk</td>
                         <td className="protein">
                             <input type="number"
                                 value={inputValue44}
