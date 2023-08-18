@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-// import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-// import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 
 export default function BackToTop() {
   const [visible, setVisible] = useState(false);
