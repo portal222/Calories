@@ -1,0 +1,414 @@
+$color-one: #cdcdcd;
+$color-two: #a7abb0;
+$color-three: rgb(164, 168, 206);
+$color4: rgb(231, 246, 253);
+$color5: rgb(241, 241, 241);
+$color6: rgb(83, 85, 83);
+$colorHid: rgb(184, 198, 184);
+$colorProt: rgb(238, 208, 170);
+$colorMl: rgb(232, 232, 232);
+$colorOil:rgb(224, 219, 151);
+$colorNut:rgb(161, 196, 178);
+$colorVoce: rgb(165, 144, 182);
+$colorKup: rgb(185, 243, 178);
+;
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    // background-color: rgb(251, 213, 144);
+    background-color: $color5;
+
+}
+
+
+
+
+.navContainer {
+    background-color: #84867b;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 60px;
+    max-width: 650px;
+    min-width: 650px;
+    justify-content: space-around;
+    align-items: center;
+
+    .linker {
+        color: $color-one;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .linker:hover {
+        color: #a8dbd7;
+    }
+
+
+}
+
+.home {
+    margin-top: 0;
+    margin: auto;
+    width: 650px;
+    height: 880px;
+    background-color: $color5;
+    padding-top: 100px;
+
+    .img {
+        margin: auto;
+        background-size: cover;
+        background-image: url("https://freepngimg.com/thumb/shape/81500-golden-ratio-spiral-number-fibonacci-white-circle.png");
+        width: 640px;
+        height: 395px;
+    }
+}
+
+.odnosi {
+    border-collapse: collapse;
+
+    max-width: 650px;
+    min-width: 650px;
+    margin: auto;
+    background-color: $color5;
+
+    // tr {
+    //     padding: 20px 15px;
+    // }
+
+    th {
+        background-color: $color6;
+        color: #f5f5f5;
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .relacija {
+        min-width: 50px;
+        max-width: 50px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    td {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        text-align: center;
+        min-width: 50px;
+        max-width: 50px;
+
+    }
+
+    input {
+        text-align: center;
+        height: 20px;
+        min-width: 50px;
+        max-width: 50px;
+        background-color: $color4;
+        border-radius: 4px;
+        border-color: burlywood;
+    }
+}
+
+
+.hrana {
+
+    border-collapse: collapse;
+    max-width: 650px;
+    min-width: 650px;
+    background-color: $color-one;
+    margin: auto;
+
+    .naslov {
+        font-size: 20px;
+        min-width: 150px;
+        max-width: 150px;
+    }
+
+    input {
+        text-align: left;
+        height: 20px;
+        min-width: 60px;
+        max-width: 60px;
+        background-color: $color4;
+        border-radius: 4px;
+        border-color: burlywood;
+    }
+
+    .hidrati {
+        background-color: $colorHid;
+
+        .protein {
+            height: 25px;
+            min-width: 27px;
+            max-width: 27px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+
+        .ugHid, 
+        .mast {
+            min-width: 60px;
+        }
+     
+    }
+
+    .prot {
+        background-color: $colorProt;
+
+        .protein {
+            height: 25px;
+            min-width: 27px;
+            max-width: 27px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+    }
+
+    .mleko {
+        background-color: $colorMl;
+
+        .protein {
+            height: 25px;
+            min-width: 27px;
+            max-width: 27px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+    }
+    .oil {
+        background-color: $colorOil;
+
+        .protein {
+            height: 25px;
+            min-width: 27px;
+            max-width: 27px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+    }
+    .orah {
+        background-color: $colorNut;
+
+        .protein {
+            height: 25px;
+            min-width: 27px;
+            max-width: 27px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+    }
+    .voce {
+        background-color: $colorVoce;
+
+        .protein {
+            height: 25px;
+            min-width: 27px;
+            max-width: 27px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+    }
+    .kupus {
+        background-color: $colorKup;
+
+        .protein {
+            height: 25px;
+            min-width: 27px;
+            max-width: 27px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+    }
+
+    thead {
+        font-size: 20px;
+
+        th {
+            text-align: center;
+            background-color: #4c6a4b;
+            color: $color-one;
+            padding: 10px 3px;
+            min-width: 26px;
+        }
+
+    }
+
+    tr {
+        background-color: $color5;
+
+        // &:nth-child(even) {
+        //     background-color: #adadad;
+        // }
+    }
+
+    tfoot {
+        color: #a8dbd7;
+
+        tr {
+
+            background-color: #92a192;
+
+            .protein {
+                height: 25px;
+                min-width: 27px;
+                max-width: 27px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+            }
+        }
+
+    }
+
+    td {
+        padding: 8px;
+        font-size: 24;
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    color: #84867b;
+    cursor: pointer;
+    border-radius: 400px;
+
+    .arrowup {
+        width: 24px;
+        height: 24px;
+        color: #7a9c99ac;
+        background-color: rgba(165, 206, 195, 0.43);
+        font-size: 38px;
+        padding-left: 5px;
+
+        border-radius: 12px;
+        border: solid 3px #95beba7c;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navContainer {
+        max-width: 358px;
+        min-width: 358px;
+        margin: auto;
+    }
+
+    .home {
+        margin-top: 0;
+        margin: auto;
+        width: 358px;
+        height: 880px;
+
+        padding-top: 80px;
+
+        .img {
+            height: 175px;
+            width: 358px;
+
+
+
+        }
+
+    }
+
+    .odnosi {
+        max-width: 358px;
+        min-width: 358px;
+      
+    
+        tr {
+            padding: 12px 8px;
+        }
+    
+        th {
+       
+            font-size: 14px;
+            padding: 7px;
+        }
+    
+        .relacija {
+            min-width: 30px;
+            max-width: 30px;
+     
+        }
+    
+        td {
+         
+            font-size: 14px;
+       
+            min-width: 30px;
+            max-width :30px;
+    
+        }
+    
+        input {
+        
+            height: 18px;
+            min-width: 30px;
+            max-width: 30px;
+          
+ 
+        }
+    }
+
+    .hrana {
+        max-width: 358px;
+        min-width: 358px;
+        margin: auto;
+        font-size: 14px;
+
+        thead {
+            font-size: 14px;
+            padding: 6px 2px;
+        }
+
+        .hidrati {
+            .ugHid {
+                min-width: 37px;
+            }
+            .mast {
+                min-width: 37px;
+            }
+        }
+
+        .naslov {
+            font-size: 14px;
+            min-width: 50px;
+            max-width: 50px;
+        }
+
+        input {
+            font-size: 14px;
+            min-width: 47px;
+            max-width: 47px;
+            border-radius: 3px;
+        }
+
+        td {
+            padding: 3px 5px;
+          
+        }
+
+    }
+
+
+
+}
