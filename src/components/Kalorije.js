@@ -59,11 +59,6 @@ const Kalorije = () => {
 
 
 
-    
-
-
-
-
     const navigate = useNavigate();
 
 
