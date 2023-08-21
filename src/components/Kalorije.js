@@ -56,6 +56,12 @@ const Kalorije = () => {
     const [inputValue42, setInputValue42] = useState("");
     const [inputValue43, setInputValue43] = useState("");
     const [inputValue44, setInputValue44] = useState("");
+    const [inputValue45, setInputValue45] = useState("");
+    const [inputValue46, setInputValue46] = useState("");
+    const [inputValue47, setInputValue47] = useState("");
+    const [inputValue48, setInputValue48] = useState("");
+    const [inputValue49, setInputValue49] = useState("");
+    const [inputValue50, setInputValue50] = useState("");
 
 
 
@@ -194,6 +200,24 @@ const Kalorije = () => {
     const handleChangeValue44 = (e) => {
         setInputValue44(e.target.value)
     }
+    const handleChangeValue45 = (e) => {
+        setInputValue45(e.target.value)
+    }
+    const handleChangeValue46 = (e) => {
+        setInputValue46(e.target.value)
+    }
+    const handleChangeValue47 = (e) => {
+        setInputValue47(e.target.value)
+    }
+    const handleChangeValue48 = (e) => {
+        setInputValue48(e.target.value)
+    }
+    const handleChangeValue49 = (e) => {
+        setInputValue49(e.target.value)
+    }
+    const handleChangeValue50 = (e) => {
+        setInputValue50(e.target.value)
+    }
 
 
 
@@ -205,7 +229,7 @@ const Kalorije = () => {
                 <thead >
                     <tr>
                         <th >Hrana</th>
-                        <th>g</th>
+                        <th>g ml</th>
                         <th>Protein</th>
                         <th>UH</th>
                         <th>Mast</th>
@@ -1121,6 +1145,129 @@ const Kalorije = () => {
                             {(inputValue44 * 0.61).toFixed(1)}
                         </td>   
                     </tr>
+                    <tr className="kupus">
+                        <td className="naslov">Patlidžan</td>
+                        <td className="protein">
+                            <input type="number"
+                                value={inputValue45}
+                                onChange={handleChangeValue45} />
+                        </td>
+                        <td className="protein">
+                        {(inputValue45 * 0.011).toFixed(1)} 
+                        </td>
+                        <td className="protein">
+                        {(inputValue45 * 0.029).toFixed(1)}
+
+                        </td>
+                        <td className="protein">
+                       
+                        </td>
+                        <td className="protein">
+                            {(inputValue45 * 0.16).toFixed(1)}
+                        </td>   
+                    </tr>
+                    <tr className="kupus">
+                        <td className="naslov">Paradajz</td>
+                        <td className="protein">
+                            <input type="number"
+                                value={inputValue46}
+                                onChange={handleChangeValue46} />
+                        </td>
+                        <td className="protein">
+                        {(inputValue46 * 0.0088).toFixed(1)} 
+                        </td>
+                        <td className="protein">
+                        {(inputValue46 * 0.039).toFixed(1)}
+
+                        </td>
+                        <td className="protein">
+                       
+                        </td>
+                        <td className="protein">
+                            {(inputValue46 * 0.18).toFixed(1)}
+                        </td>   
+                    </tr>
+                    <tr className="kupus">
+                        <td className="naslov">Paradajz sok</td>
+                        <td className="protein">
+                            <input type="number"
+                                value={inputValue47}
+                                onChange={handleChangeValue47} />
+                        </td>
+                        <td className="protein">
+                        {(inputValue47 * 0.008).toFixed(1)} 
+                        </td>
+                        <td className="protein">
+                        {(inputValue47 * 0.059).toFixed(1)}
+
+                        </td>
+                        <td className="protein">
+                       
+                        </td>
+                        <td className="protein">
+                            {(inputValue47 * 0.27).toFixed(1)}
+                        </td>   
+                    </tr>
+                    <tr className="alcohol">
+                        <td className="naslov">Vino crno</td>
+                        <td className="protein">
+                            <input type="number"
+                                value={inputValue48}
+                                onChange={handleChangeValue48} />
+                        </td>
+                        <td className="protein"> 
+                        </td>
+                        <td className="protein">
+                        {(inputValue48 * 0.026).toFixed(1)}
+
+                        </td>
+                        <td className="protein">
+                       
+                        </td>
+                        <td className="protein">
+                            {(inputValue48 * 0.85).toFixed(1)}
+                        </td>   
+                    </tr>
+                    <tr className="alcohol">
+                        <td className="naslov">Pivo svetlo</td>
+                        <td className="protein">
+                            <input type="number"
+                                value={inputValue49}
+                                onChange={handleChangeValue49} />
+                        </td>
+                        <td className="protein"> 
+                        </td>
+                        <td className="protein">
+                        {(inputValue49 * 0.035).toFixed(1)}
+
+                        </td>
+                        <td className="protein">
+                       
+                        </td>
+                        <td className="protein">
+                            {(inputValue49 * 0.43).toFixed(1)}
+                        </td>   
+                    </tr>
+                    <tr className="alcohol">
+                        <td className="naslov">Rakija</td>
+                        <td className="protein">
+                            <input type="number"
+                                value={inputValue50}
+                                onChange={handleChangeValue50} />
+                        </td>
+                        <td className="protein"> 
+                        </td>
+                        <td className="protein">
+                       
+
+                        </td>
+                        <td className="protein">
+                       
+                        </td>
+                        <td className="protein">
+                            {(inputValue50 * 3.5).toFixed(1)}
+                        </td>   
+                    </tr>
            
                 </tbody>
                 <tfoot>
@@ -1136,7 +1283,8 @@ const Kalorije = () => {
                                 + Number(inputValue24 * 0.03) + Number(inputValue25 * 0.22) + Number(inputValue28 * 0.2) + Number(inputValue29 * 0.18)
                                 + Number(inputValue30 * 0.01) + Number(inputValue36 * 0.016) + Number(inputValue37 * 0.02) + Number(inputValue38 * 0.01)
                                 + Number(inputValue39 * 0.016) + Number(inputValue40 * 0.03) + Number(inputValue41 * 0.02) + Number(inputValue42 * 0.029)
-                                + Number(inputValue43 * 0.01) + Number(inputValue44 * 0.01)).toFixed(1)}
+                                + Number(inputValue43 * 0.01) + Number(inputValue44 * 0.01) + Number(inputValue45 * 0.011) + Number(inputValue46 * 0.0088)
+                                + Number(inputValue47 * 0.008)).toFixed(1)}
                         </td>
                         <td className="protein">
                             {(Number(inputValue1 * 0.78) + Number(inputValue2 * 0.644) + Number(inputValue3 * 0.2) + Number(inputValue4 * 0.77)
@@ -1146,7 +1294,9 @@ const Kalorije = () => {
                                 + Number(inputValue30 * 0.23) + Number(inputValue31 * 0.13) + Number(inputValue32 * 0.117) + Number(inputValue33 * 0.816)
                                 + Number(inputValue34 * 0.07) + Number(inputValue35 * 0.126) + Number(inputValue36 * 0.66) + Number(inputValue37 * 0.03)
                                 + Number(inputValue38 * 0.09) + Number(inputValue39 * 0.1) + Number(inputValue40 * 0.07) + Number(inputValue41 * 0.1)
-                                + Number(inputValue42 * 0.036) + Number(inputValue43 * 0.03) + Number(inputValue44 * 0.14)).toFixed(1)
+                                + Number(inputValue42 * 0.036) + Number(inputValue43 * 0.03) + Number(inputValue44 * 0.14) + Number(inputValue45 * 0.029)
+                                + Number(inputValue46 * 0.039) + Number(inputValue47 * 0.059) + Number(inputValue48 * 0.026)+ Number(inputValue49 * 0.035)
+                                ).toFixed(1)
                             }
                         </td>
                         <td className="protein">
@@ -1169,7 +1319,9 @@ const Kalorije = () => {
                                 + Number(inputValue29 * 5.34) + Number(inputValue30 * 0.89) + Number(inputValue31 * 0.5) + Number(inputValue32 * 0.47)
                                 + Number(inputValue33 * 0.34) + Number(inputValue34 * 0.28) + Number(inputValue35 * 0.48) + Number(inputValue36 * 2.7)
                                 + Number(inputValue37 * 0.22) + Number(inputValue38 * 0.4) + Number(inputValue39 * 0.43) + Number(inputValue40 * 0.34)
-                                + Number(inputValue41 * 0.5) + Number(inputValue42 * 0.23) + Number(inputValue43 * 0.16) + Number(inputValue44 * 0.61)).toFixed(1)}
+                                + Number(inputValue41 * 0.5) + Number(inputValue42 * 0.23) + Number(inputValue43 * 0.16) + Number(inputValue44 * 0.61)
+                                + Number(inputValue45 * 0.16) + Number(inputValue46 * 0.18) + Number(inputValue47 * 0.27) + Number(inputValue48 * 0.85)
+                                + Number(inputValue49 * 0.043) + Number(inputValue50 * 3.5)).toFixed(1)}
                         </td>
                     </tr>
                 </tfoot>

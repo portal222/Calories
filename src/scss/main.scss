@@ -11,6 +11,7 @@ $colorOil:rgb(224, 219, 151);
 $colorNut:rgb(161, 196, 178);
 $colorVoce: rgb(165, 144, 182);
 $colorKup: rgb(185, 243, 178);
+$colorAlc:rgb(206, 255, 247);
 ;
 
 body {
@@ -218,6 +219,18 @@ body {
     }
     .kupus {
         background-color: $colorKup;
+
+        .protein {
+            height: 25px;
+            min-width: 27px;
+            max-width: 27px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+    }
+    .alcohol {
+        background-color: $colorAlc;
 
         .protein {
             height: 25px;

@@ -58,7 +58,7 @@ const Odnosi = () => {
                     </td>
                     <td >prema</td>
                     <td className="relacija">
-                        {(inputValue3 * inputValue2) / inputValue1}
+                       {(inputValue3 * inputValue2) / inputValue1}
                     </td>
                 </tr>
                 <tr>
