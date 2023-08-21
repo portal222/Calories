@@ -2,12 +2,12 @@ import React, { useState } from "react";
 
 const Odnosi = () => {
 
-    const [inputValue1, setInputValue1] = useState(0);
-    const [inputValue2, setInputValue2] = useState(0);
-    const [inputValue3, setInputValue3] = useState(0);
-    const [inputValue4, setInputValue4] = useState(0);
-    const [inputValue5, setInputValue5] = useState(0);
-    const [inputValue6, setInputValue6] = useState(0);
+    const [inputValue1, setInputValue1] = useState("");
+    const [inputValue2, setInputValue2] = useState("");
+    const [inputValue3, setInputValue3] = useState("");
+    const [inputValue4, setInputValue4] = useState("");
+    const [inputValue5, setInputValue5] = useState("");
+    const [inputValue6, setInputValue6] = useState("");
 
 
     const handleChangeValue1 = (e) => {
