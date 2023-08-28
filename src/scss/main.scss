@@ -1,3 +1,6 @@
+@import '../scss/tajmer.scss';
+
+
 $color-one: #cdcdcd;
 $color-two: #a7abb0;
 $color-three: rgb(164, 168, 206);
@@ -77,6 +80,9 @@ body {
     // tr {
     //     padding: 20px 15px;
     // }
+    .proc {
+     padding-left: 20px;
+    }
 
     th {
         background-color: $color6;

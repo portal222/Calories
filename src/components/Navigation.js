@@ -4,6 +4,7 @@ import { Link, Routes, Route, NavLink, HashRouter } from 'react-router-dom';
 
 import Kalorije from "./Kalorije";
 import Odnosi from "./Odnosi";
+import Tajmer from "./Tajmer";
 
 export default function Navigation() {
   return (
@@ -20,6 +21,11 @@ export default function Navigation() {
           <Link to="kalorije" className="linker">
             KALORIJE</Link>
         </div>
+        <div>
+          <Link to="tajmer" className="linker">
+            TAJMER
+          </Link>
+        </div>
 
 
 
@@ -34,6 +40,7 @@ export default function Navigation() {
         <Route path="/" element={<Odnosi />} />
  
         <Route path="/kalorije" element={<Kalorije />} />
+        <Route path="/tajmer" element={<Tajmer />} />
 
       </Routes>
       <div className="home">
