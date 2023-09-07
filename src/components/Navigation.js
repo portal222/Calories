@@ -13,18 +13,36 @@ export default function Navigation() {
 
 
         <div>
-          <Link to='/' className="linker">
+          <NavLink to='/' className="linker"
+              style={({ isActive }) => {
+                return {
+                color: isActive ? "#cdcdcd" : "rgb(83, 85, 83)",                
+                };
+              }}
+          >
             ODNOSI
-          </Link>
+          </NavLink>
         </div>
         <div>
-          <Link to="kalorije" className="linker">
-            KALORIJE</Link>
+          <NavLink to="kalorije" className="linker"
+              style={({ isActive }) => {
+                return {
+                color: isActive ? "#cdcdcd" : "rgb(83, 85, 83)",
+                };
+              }}
+          >
+            KALORIJE</NavLink>
         </div>
         <div>
-          <Link to="tajmer" className="linker">
+          <NavLink to="tajmer" className="linker"
+              style={({ isActive }) => {
+                return {
+                color: isActive ? "#cdcdcd" : "rgb(83, 85, 83)",
+                };
+              }}
+          >
             TAJMER
-          </Link>
+          </NavLink>
         </div>
 
 
