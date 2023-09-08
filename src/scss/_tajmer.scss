@@ -17,7 +17,7 @@
         justify-content: baseline;
         align-items: end;
         width: 400px;
-        height: 328px;
+        height: 345px;
         background-color: bisque;
         border: 10px solid #bbb;
         border-radius: 12px;
@@ -35,6 +35,7 @@
         }
 
         .boxBat {
+           height: 20px;
             padding: 4px;
             border: solid 1px green;
             border-radius: 4px;
@@ -46,7 +47,19 @@
             }
 
         }
+       
     }
+    .inputText {
+        color: #40433f;
+        font-size: 20px;
+
+        .inputPlace {
+           max-width: 100px;
+            height: 20px;
+            background-color: aliceblue;
+        }
+    }
+     
 }
 
 @media screen and (max-width: 500px) {
@@ -57,7 +70,7 @@
         .colorBox {
             max-width: 320px;
             min-width: 320px;
-            height: 325px;
+         
 
             .box,
             .box1,
