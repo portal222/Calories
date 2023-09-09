@@ -10,11 +10,16 @@ $color05: rgb(151, 148, 211);
     margin: auto;
     max-width: 650px;
     min-width: 650px;
-    height: 700px;
+    height: 1200px;
     background-color: rgb(224, 184, 160);
     text-align: center;
     align-items: center;
     justify-content: center;
+
+    hr {
+       
+       width: 645px;
+    }
 
 
     .colorBox {
@@ -61,6 +66,12 @@ $color05: rgb(151, 148, 211);
             }
 
         }
+        .title {
+            height: 22px;
+            padding: 4px;
+            background-color: rgb(208, 240, 230);
+            color: rgb(25, 25, 73);
+        }
     }
 
     .boxBatAll {
@@ -97,6 +108,10 @@ $color05: rgb(151, 148, 211);
     .container {
         max-width: 358px;
         min-width: 358px;
+
+        hr {
+            width: 355px;
+        }
 
         .colorBox {
             max-width: 325px;

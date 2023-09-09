@@ -9,6 +9,13 @@ const Tajmer = () => {
     const [isOpen2, setOpen2] = useState(false)
     const [isOpen3, setOpen3] = useState(false)
     const [isOpen4, setOpen4] = useState(false)
+    const [isOpen5, setOpen5] = useState(false)
+    const [isOpen6, setOpen6] = useState(false)
+    const [isOpen7, setOpen7] = useState(false)
+    const [isOpen8, setOpen8] = useState(false)
+    const [isOpen9, setOpen9] = useState(false)
+
+
     const [inputValue1, setInputValue1] = useState(0);
     const [inputValue2, setInputValue2] = useState(0);
 
@@ -50,7 +57,7 @@ const Tajmer = () => {
                             style={{ height: isOpen1 ? "315px" : "0px" }}
                             transition={{
                                 ease: "linear",
-                                duration: 10,
+                                duration: 3600,
                                 repeat: Infinity
                             }}
                         />
@@ -66,7 +73,7 @@ const Tajmer = () => {
                             transition={{
                                 ease: "linear",
                                 repeat: Infinity,
-                                duration: 20
+                                duration: 60
                             }}
                         />
                         <div onClick={() => setOpen2(!isOpen2)}
@@ -127,6 +134,100 @@ const Tajmer = () => {
                 >
 
                     sve</div>
+                <hr></hr>
+                <h1>Ceo dan u prolazu </h1>
+                <div className="colorBox">
+                    <div>
+                        <motion.div
+                            className="box4"
+                            layout
+                            style={{ height: isOpen5 ? "308px" : "0px" }}
+                            transition={{
+                                ease: "easeInOut",
+                                type: "spring",
+                                duration: 1,
+                                repeat: Infinity,
+
+                            }}
+                        />
+                        <div className="title">
+                            1 sek
+                        </div>
+                    </div>
+                    <div>
+                        <motion.div
+                            className="box3"
+                            layout
+                            style={{ height: isOpen6 ? "315px" : "0px" }}
+                            transition={{
+                                ease: "linear",
+                                duration: 15,
+                                repeat: Infinity,
+
+                            }}
+                        />
+                        <div className="title">
+                            15 sek
+                        </div>
+                    </div>
+                    <div>
+                        <motion.div
+                            className="box2"
+                            layout
+                            style={{ height: isOpen7 ? "315px" : "0px" }}
+                            transition={{
+                                ease: "linear",
+                                duration: 60,
+                                repeat: Infinity,
+
+                            }}
+                        />
+                        <div className="title">
+                            1 minut
+                        </div>
+                    </div>
+                    <div>
+                        <motion.div
+                            className="box1"
+                            layout
+                            style={{ height: isOpen8 ? "315px" : "0px" }}
+                            transition={{
+                                ease: "linear",
+                                duration: 3600,
+                                repeat: Infinity,
+
+                            }}
+                        />
+                        <div className="title">
+                            1 sat
+                        </div>
+                    </div>
+                    <div>
+                        <motion.div
+                            className="box"
+                            layout
+                            style={{ height: isOpen9 ? "315px" : "0px" }}
+                            transition={{
+                                ease: "linear",
+                                duration: 86400,
+                                repeat: Infinity,
+
+                            }}
+                        />
+                        <div className="title">
+                            1 dan
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    onClick={() => [setOpen5(!isOpen5), setOpen6(!isOpen6), setOpen7(!isOpen7),
+                    setOpen8(!isOpen8), setOpen9(!isOpen9)]}
+                    className="boxBatAll"
+                >
+
+                    POKRENI DAN</div>
+
 
             </div>
 
