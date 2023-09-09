@@ -57,7 +57,7 @@ const Tajmer = () => {
                             style={{ height: isOpen1 ? "315px" : "0px" }}
                             transition={{
                                 ease: "linear",
-                                duration: 3600,
+                                duration: 10,
                                 repeat: Infinity
                             }}
                         />
@@ -73,7 +73,7 @@ const Tajmer = () => {
                             transition={{
                                 ease: "linear",
                                 repeat: Infinity,
-                                duration: 60
+                                duration: 20
                             }}
                         />
                         <div onClick={() => setOpen2(!isOpen2)}
