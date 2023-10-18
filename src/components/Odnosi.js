@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+
 
 const Odnosi = () => {
 
@@ -12,6 +13,32 @@ const Odnosi = () => {
     const [inputValue8, setInputValue8] = useState("");
     const [inputValue9, setInputValue9] = useState("");
     const [inputValue10, setInputValue10] = useState("");
+// odavde na dole ubaceno 3d gledanje
+    const modelRef = React.useRef();
+    const [annots, setAnnots] = useState([]);
+
+    const handleClick = (event) => {
+      const { clientX, clientY } = event;
+  
+      if (modelRef.current) {
+        let hit = modelRef.current.positionAndNormalFromPoint(clientX, clientY);
+        if (hit) {
+          setAnnots((annots) => {
+            return [...annots, hit];
+          });
+        }
+      }
+    };
+  
+    const getDataPosition = (annot) => {
+      return `${annot.position.x} ${annot.position.y} ${annot.position.z}`;
+    };
+  
+    const getDataNormal = (annot) => {
+      return `${annot.normal.x} ${annot.normal.y} ${annot.normal.z}`;
+    };
+
+    // kraj dodatka za 3d
 
 
     const handleChangeValue1 = (e) => {
@@ -153,6 +180,32 @@ const Odnosi = () => {
                 </tbody>
 
             </table>
+           {/* dodatak za 3d na dole */}
+             <model-viewer
+              src="./img/AutomatBiepi.glb" 
+              shadow-intensity="1"
+              camera-controls
+              ar
+              ar-modes="webxr"
+              onClick={handleClick}
+              ref={(ref) => {
+                modelRef.current = ref;
+              }} 
+            className="moduleView">
+                {annots.map((annot, idx) => (
+        <button
+          key={`hotspot-${idx}`}
+          className="view-button"
+          slot={`hotspot-${idx}`}
+          data-position={getDataPosition(annot)}
+          data-normal={getDataNormal(annot)}
+        ></button>
+      ))}
+        </model-viewer>
+        {/* kraj dodatka za 3d */}
+          
+          
+          
         </>
     )
 }

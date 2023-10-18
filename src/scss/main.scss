@@ -6,7 +6,7 @@ $color-two: #a7abb0;
 $color-three: rgb(164, 168, 206);
 $color4: rgb(231, 246, 253);
 $color5: rgb(241, 241, 241);
-$color6: rgb(83, 85, 83);
+$color6: rgb(143, 122, 111);
 $colorHid: rgb(184, 198, 184);
 $colorProt: rgb(238, 208, 170);
 $colorMl: rgb(232, 232, 232);
@@ -117,7 +117,21 @@ body {
         border-color: burlywood;
     }
 }
+model-viewer {
+    margin: auto;
+    cursor: grab;
+    display: flex;
+    height: 500px;
+    width: 650px;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+}
+.view-button {
+    background-color: transparent;
+    border-color: transparent;
 
+}
 
 .hrana {
 
@@ -386,6 +400,11 @@ body {
           
  
         }
+    }
+
+    model-viewer {
+        width: 360px;
+        height: 400px;
     }
 
     .hrana {
