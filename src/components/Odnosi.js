@@ -182,7 +182,7 @@ const Odnosi = () => {
             </table>
            {/* dodatak za 3d na dole */}
              <model-viewer
-              src="./img/AutomatBiepi.glb" 
+              src="./AutomatBiepi.glb" 
               shadow-intensity="1"
               camera-controls
               ar
