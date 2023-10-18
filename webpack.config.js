@@ -39,13 +39,11 @@ module.exports = {
                 ],
               },
               {
-                test: /.(glb)$/i,
+                test: /.(gltf)$/i,
                 use: [
                   {
                     loader: 'file-loader',
-                    options: {
-                      limit: 10000,
-                    },
+                  
                   },
                 ],
               },
