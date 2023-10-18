@@ -184,7 +184,7 @@ const Odnosi = () => {
              <model-viewer
               src= "./AutomatBiepi.glb"
               shadow-intensity="1"
-              environment-image="./music_hall.hdr"
+             
               camera-controls
               ar
               ar-modes="webxr"
