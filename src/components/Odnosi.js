@@ -182,7 +182,8 @@ const Odnosi = () => {
             </table>
            {/* dodatak za 3d na dole */}
              <model-viewer
-              src= "/AutomatBiepi.glb"
+            //   src="https://storage.googleapis.com/search-ar-edu/periodic-table/element_002_helium/element_002_helium.glb"
+              src="AutomatBiepi.glb"
               shadow-intensity="1"
              
               camera-controls
