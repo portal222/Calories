@@ -240,7 +240,8 @@ const Kalorije = () => {
                     <tr className="hidrati">
                         <td className="naslov">Pirinač</td>
                         <td>
-                            <input type="number"
+                            <input
+                            name="value1" type="number"
                                 value={inputValue1}
                                 onChange={handleChangeValue1} />
                         </td>
@@ -261,6 +262,7 @@ const Kalorije = () => {
                         <td className="naslov">Ovsene pahuljice</td>
                         <td className="protein">
                             <input type="number"
+                            name="value2"
                                 value={inputValue2}
                                 onChange={handleChangeValue2} />
                         </td>
@@ -281,6 +283,7 @@ const Kalorije = () => {
                         <td className="naslov">Krompir</td>
                         <td className="protein">
                             <input type="number"
+                            name="value3"
                                 value={inputValue3}
                                 onChange={handleChangeValue3} />
                         </td>
@@ -301,6 +304,7 @@ const Kalorije = () => {
                         <td className="naslov">Kukuruzni griz</td>
                         <td className="protein">
                             <input type="number"
+                            name="value4"
                                 value={inputValue4}
                                 onChange={handleChangeValue4} />
                         </td>
@@ -321,6 +325,7 @@ const Kalorije = () => {
                         <td className="naslov">Špagete durum</td>
                         <td className="protein">
                             <input type="number"
+                            name="value5"
                                 value={inputValue5}
                                 onChange={handleChangeValue5} />
                         </td>
@@ -341,6 +346,7 @@ const Kalorije = () => {
                         <td className="naslov">Sočivo</td>
                         <td className="protein">
                             <input type="number"
+                            name="value6"
                                 value={inputValue6}
                                 onChange={handleChangeValue6} />
                         </td>
@@ -361,6 +367,7 @@ const Kalorije = () => {
                         <td className="naslov">Žuti grašak</td>
                         <td className="protein">
                             <input type="number"
+                            name="value7"
                                 value={inputValue7}
                                 onChange={handleChangeValue7} />
                         </td>
@@ -381,6 +388,7 @@ const Kalorije = () => {
                         <td className="naslov">Pasulj</td>
                         <td className="protein">
                             <input type="number"
+                            name="value8"
                                 value={inputValue8}
                                 onChange={handleChangeValue8} />
                         </td>
@@ -401,6 +409,7 @@ const Kalorije = () => {
                         <td className="naslov">Tuna konzerva</td>
                         <td className="protein">
                             <input type="number"
+                            name="value9"
                                 value={inputValue9}
                                 onChange={handleChangeValue9} />
                         </td>
@@ -421,6 +430,7 @@ const Kalorije = () => {
                         <td className="naslov">Piletina</td>
                         <td className="protein">
                             <input type="number"
+                            name="value10"
                                 value={inputValue10}
                                 onChange={handleChangeValue10} />
                         </td>
@@ -441,6 +451,7 @@ const Kalorije = () => {
                         <td className="naslov">Ćureća prsa</td>
                         <td className="protein">
                             <input type="number"
+                            name="value11"
                                 value={inputValue11}
                                 onChange={handleChangeValue11} />
                         </td>
@@ -461,6 +472,7 @@ const Kalorije = () => {
                         <td className="naslov">Govedina nemasna</td>
                         <td className="protein">
                             <input type="number"
+                            name="value12"
                                 value={inputValue12}
                                 onChange={handleChangeValue12} />
                         </td>
@@ -481,6 +493,7 @@ const Kalorije = () => {
                         <td className="naslov">Junetina (but)</td>
                         <td className="protein">
                             <input type="number"
+                            name="value13"
                                 value={inputValue13}
                                 onChange={handleChangeValue13} />
                         </td>
@@ -501,6 +514,7 @@ const Kalorije = () => {
                         <td className="naslov">Svinjetina nemasna</td>
                         <td className="protein">
                             <input type="number"
+                            name="value14"
                                 value={inputValue14}
                                 onChange={handleChangeValue14} />
                         </td>
@@ -521,6 +535,7 @@ const Kalorije = () => {
                         <td className="naslov">Jaje celo</td>
                         <td className="protein">
                             <input type="number"
+                            name="value15"
                                 value={inputValue15}
                                 onChange={handleChangeValue15} />
                         </td>
@@ -541,6 +556,7 @@ const Kalorije = () => {
                         <td className="naslov">Maslac</td>
                         <td className="protein">
                             <input type="number"
+                            name="value16"
                                 value={inputValue16}
                                 onChange={handleChangeValue16} />
                         </td>
@@ -561,6 +577,7 @@ const Kalorije = () => {
                         <td className="naslov">Mleko 2.8%</td>
                         <td className="protein">
                             <input type="number"
+                            name="value17"
                                 value={inputValue17}
                                 onChange={handleChangeValue17} />
                         </td>
@@ -582,6 +599,7 @@ const Kalorije = () => {
                         <td className="naslov">Mladi sir</td>
                         <td className="protein">
                             <input type="number"
+                            name="value18"
                                 value={inputValue18}
                                 onChange={handleChangeValue18} />
                         </td>
@@ -603,6 +621,7 @@ const Kalorije = () => {
                         <td className="naslov">Jogurt 2.8%</td>
                         <td className="protein">
                             <input type="number"
+                            name="value19"
                                 value={inputValue19}
                                 onChange={handleChangeValue19} />
                         </td>
@@ -624,6 +643,7 @@ const Kalorije = () => {
                         <td className="naslov">Parmezan</td>
                         <td className="protein">
                             <input type="number"
+                            name="value20"
                                 value={inputValue20}
                                 onChange={handleChangeValue20} />
                         </td>
@@ -645,6 +665,7 @@ const Kalorije = () => {
                         <td className="naslov">Maslinovo ulje</td>
                         <td className="protein">
                             <input type="number"
+                            name="value21"
                                 value={inputValue21}
                                 onChange={handleChangeValue21} />
                         </td>
@@ -666,6 +687,7 @@ const Kalorije = () => {
                         <td className="naslov">Masline zelene</td>
                         <td className="protein">
                             <input type="number"
+                            name="value22"
                                 value={inputValue22}
                                 onChange={handleChangeValue22} />
                         </td>
@@ -687,6 +709,7 @@ const Kalorije = () => {
                         <td className="naslov">Kokosovo ulje</td>
                         <td className="protein">
                             <input type="number"
+                            name="value23"
                                 value={inputValue23}
                                 onChange={handleChangeValue23} />
                         </td>
@@ -708,6 +731,7 @@ const Kalorije = () => {
                         <td className="naslov">Kokos</td>
                         <td className="protein">
                             <input type="number"
+                            name="value24"
                                 value={inputValue24}
                                 onChange={handleChangeValue24} />
                         </td>
@@ -729,6 +753,7 @@ const Kalorije = () => {
                         <td className="naslov">Badem</td>
                         <td className="protein">
                             <input type="number"
+                            name="value25"
                                 value={inputValue25}
                                 onChange={handleChangeValue25} />
                         </td>
@@ -750,6 +775,7 @@ const Kalorije = () => {
                         <td className="naslov">Orah</td>
                         <td className="protein">
                             <input type="number"
+                            name="value26"
                                 value={inputValue26}
                                 onChange={handleChangeValue26} />
                         </td>
@@ -771,6 +797,7 @@ const Kalorije = () => {
                         <td className="naslov">Lešnik</td>
                         <td className="protein">
                             <input type="number"
+                            name="value27"
                                 value={inputValue27}
                                 onChange={handleChangeValue27} />
                         </td>
@@ -792,6 +819,7 @@ const Kalorije = () => {
                         <td className="naslov">Suncokret seme</td>
                         <td className="protein">
                             <input type="number"
+                            name="value28"
                                 value={inputValue28}
                                 onChange={handleChangeValue28} />
                         </td>
@@ -813,6 +841,7 @@ const Kalorije = () => {
                         <td className="naslov">Lan seme</td>
                         <td className="protein">
                             <input type="number"
+                            name="value29"
                                 value={inputValue29}
                                 onChange={handleChangeValue29} />
                         </td>
@@ -834,6 +863,7 @@ const Kalorije = () => {
                         <td className="naslov">Banana</td>
                         <td className="protein">
                             <input type="number"
+                            name="value30"
                                 value={inputValue30}
                                 onChange={handleChangeValue30} />
                         </td>
@@ -855,6 +885,7 @@ const Kalorije = () => {
                         <td className="naslov">Jabuka</td>
                         <td className="protein">
                             <input type="number"
+                            name="value31"
                                 value={inputValue31}
                                 onChange={handleChangeValue31} />
                         </td>
@@ -876,6 +907,7 @@ const Kalorije = () => {
                         <td className="naslov">Narandža</td>
                         <td className="protein">
                             <input type="number"
+                            name="value32"
                                 value={inputValue32}
                                 onChange={handleChangeValue32} />
                         </td>
@@ -897,6 +929,7 @@ const Kalorije = () => {
                         <td className="naslov">Dinja</td>
                         <td className="protein">
                             <input type="number"
+                            name="value33"
                                 value={inputValue33}
                                 onChange={handleChangeValue33} />
                         </td>
@@ -918,6 +951,7 @@ const Kalorije = () => {
                         <td className="naslov">Grejpfrut</td>
                         <td className="protein">
                             <input type="number"
+                            name="value34"
                                 value={inputValue34}
                                 onChange={handleChangeValue34} />
                         </td>
@@ -939,6 +973,7 @@ const Kalorije = () => {
                         <td className="naslov">Ananas</td>
                         <td className="protein">
                             <input type="number"
+                            name="value35"
                                 value={inputValue35}
                                 onChange={handleChangeValue35} />
                         </td>
@@ -960,6 +995,7 @@ const Kalorije = () => {
                         <td className="naslov">Suvo groždje</td>
                         <td className="protein">
                             <input type="number"
+                            name="value36"
                                 value={inputValue36}
                                 onChange={handleChangeValue36} />
                         </td>
@@ -981,6 +1017,7 @@ const Kalorije = () => {
                         <td className="naslov">Kupus</td>
                         <td className="protein">
                             <input type="number"
+                            name="value37"
                                 value={inputValue37}
                                 onChange={handleChangeValue37} />
                         </td>
@@ -1002,6 +1039,7 @@ const Kalorije = () => {
                         <td className="naslov">Šargarepa</td>
                         <td className="protein">
                             <input type="number"
+                            name="value38"
                                 value={inputValue38}
                                 onChange={handleChangeValue38} />
                         </td>
@@ -1023,6 +1061,7 @@ const Kalorije = () => {
                         <td className="naslov">Cvekla</td>
                         <td className="protein">
                             <input type="number"
+                            name="value39"
                                 value={inputValue39}
                                 onChange={handleChangeValue39} />
                         </td>
@@ -1044,6 +1083,7 @@ const Kalorije = () => {
                         <td className="naslov">Brokoli</td>
                         <td className="protein">
                             <input type="number"
+                            name="value40"
                                 value={inputValue40}
                                 onChange={handleChangeValue40} />
                         </td>
@@ -1065,6 +1105,7 @@ const Kalorije = () => {
                         <td className="naslov">Kelj</td>
                         <td className="protein">
                             <input type="number"
+                            name="value41"
                                 value={inputValue41}
                                 onChange={handleChangeValue41} />
                         </td>
@@ -1086,6 +1127,7 @@ const Kalorije = () => {
                         <td className="naslov">Španat</td>
                         <td className="protein">
                             <input type="number"
+                            name="value42"
                                 value={inputValue42}
                                 onChange={handleChangeValue42} />
                         </td>
@@ -1107,6 +1149,7 @@ const Kalorije = () => {
                         <td className="naslov">Tikvica</td>
                         <td className="protein">
                             <input type="number"
+                            name="value43"
                                 value={inputValue43}
                                 onChange={handleChangeValue43} />
                         </td>
@@ -1128,6 +1171,7 @@ const Kalorije = () => {
                         <td className="naslov">Praziluk</td>
                         <td className="protein">
                             <input type="number"
+                            name="value44"
                                 value={inputValue44}
                                 onChange={handleChangeValue44} />
                         </td>
@@ -1149,6 +1193,7 @@ const Kalorije = () => {
                         <td className="naslov">Patlidžan</td>
                         <td className="protein">
                             <input type="number"
+                            name="value45"
                                 value={inputValue45}
                                 onChange={handleChangeValue45} />
                         </td>
@@ -1170,6 +1215,7 @@ const Kalorije = () => {
                         <td className="naslov">Paradajz</td>
                         <td className="protein">
                             <input type="number"
+                            name="value46"
                                 value={inputValue46}
                                 onChange={handleChangeValue46} />
                         </td>
@@ -1191,6 +1237,7 @@ const Kalorije = () => {
                         <td className="naslov">Paradajz sok</td>
                         <td className="protein">
                             <input type="number"
+                            name="value47"
                                 value={inputValue47}
                                 onChange={handleChangeValue47} />
                         </td>
@@ -1212,6 +1259,7 @@ const Kalorije = () => {
                         <td className="naslov">Vino crno</td>
                         <td className="protein">
                             <input type="number"
+                            name="value48"
                                 value={inputValue48}
                                 onChange={handleChangeValue48} />
                         </td>
@@ -1232,6 +1280,7 @@ const Kalorije = () => {
                         <td className="naslov">Pivo svetlo</td>
                         <td className="protein">
                             <input type="number"
+                            name="value49"
                                 value={inputValue49}
                                 onChange={handleChangeValue49} />
                         </td>
@@ -1252,6 +1301,7 @@ const Kalorije = () => {
                         <td className="naslov">Rakija</td>
                         <td className="protein">
                             <input type="number"
+                            name="value50"
                                 value={inputValue50}
                                 onChange={handleChangeValue50} />
                         </td>
