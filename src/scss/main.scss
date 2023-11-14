@@ -1,11 +1,13 @@
-@import '../scss/tajmer.scss';
+@import '../scss/_tajmer.scss';
+@import '../scss/_digitron.scss';
 
 
 $color-one: #cdcdcd;
 $color-two: #a7abb0;
 $color-three: rgb(164, 168, 206);
 $color4: rgb(231, 246, 253);
-$color5: rgb(241, 241, 241);
+// $color5: rgb(241, 241, 241);
+$color5: #d7ccc8;
 $color6: rgb(143, 122, 111);
 $colorHid: rgb(184, 198, 184);
 $colorProt: rgb(238, 208, 170);
@@ -29,7 +31,7 @@ body {
 
 
 .navContainer {
-    background-color: #8e956b;
+    background-color: #bcaaa4;
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -76,10 +78,9 @@ body {
     min-width: 650px;
     margin: auto;
     background-color: $color5;
+    margin-bottom: 12px;
+  
 
-    // tr {
-    //     padding: 20px 15px;
-    // }
     .proc {
      padding-left: 20px;
     }
@@ -104,6 +105,7 @@ body {
         text-align: center;
         min-width: 50px;
         max-width: 50px;
+       
 
     }
 
@@ -115,6 +117,7 @@ body {
         background-color: $color4;
         border-radius: 4px;
         border-color: burlywood;
+      margin-top: 12px;
     }
 }
 model-viewer {
@@ -131,6 +134,11 @@ model-viewer {
     background-color: transparent;
     border-color: transparent;
 
+}
+.calc {
+    margin: auto;
+margin-top: 30px;
+    width: 300px;
 }
 
 .hrana {

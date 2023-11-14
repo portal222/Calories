@@ -1321,7 +1321,7 @@ const Kalorije = () => {
                                 + Number(inputValue37 * 0.22) + Number(inputValue38 * 0.4) + Number(inputValue39 * 0.43) + Number(inputValue40 * 0.34)
                                 + Number(inputValue41 * 0.5) + Number(inputValue42 * 0.23) + Number(inputValue43 * 0.16) + Number(inputValue44 * 0.61)
                                 + Number(inputValue45 * 0.16) + Number(inputValue46 * 0.18) + Number(inputValue47 * 0.27) + Number(inputValue48 * 0.85)
-                                + Number(inputValue49 * 0.043) + Number(inputValue50 * 3.5)).toFixed(1)}
+                                + Number(inputValue49 * 0.43) + Number(inputValue50 * 3.5)).toFixed(1)}
                         </td>
                     </tr>
                 </tfoot>

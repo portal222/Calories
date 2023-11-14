@@ -1,4 +1,7 @@
 import React, { useState, useRef } from "react";
+// import Calculator from "./Calculator";
+import Digitron from "./Digitron"
+
 
 
 const Odnosi = () => {
@@ -81,22 +84,26 @@ const Odnosi = () => {
                     </tr>
 
                 </thead>
+          
                 <tbody>
                     <tr>
                         <td >
                             <input type="number"
+                            name="value1"
                                 value={inputValue1}
                                 onChange={handleChangeValue1} />
                         </td>
                         <td >prema</td>
                         <td >
                             <input type="number"
+                            name="value2"
                                 value={inputValue2}
                                 onChange={handleChangeValue2} />
                         </td>
                         <td >isto je kao</td>
                         <td >
                             <input type="number"
+                            name="value3"
                                 value={inputValue3}
                                 onChange={handleChangeValue3} />
                         </td>
@@ -108,12 +115,14 @@ const Odnosi = () => {
                     <tr>
                         <td >
                             <input type="number"
+                            name="value4"
                                 value={inputValue4}
                                 onChange={handleChangeValue4} />
                         </td>
                         <td >prema</td>
                         <td >
                             <input type="number"
+                            name="value5"
                                 value={inputValue5}
                                 onChange={handleChangeValue5} />
                         </td>
@@ -125,6 +134,7 @@ const Odnosi = () => {
                         <td >prema</td>
                         <td >
                             <input type="number"
+                            name="value6"
                                 value={inputValue6}
                                 onChange={handleChangeValue6} />
                         </td >
@@ -132,24 +142,26 @@ const Odnosi = () => {
                     </tr>
                 </tbody>
             </table>
-            <br></br>
-            <br></br>
+         
             <table className="odnosi">
                 <thead>
                     <tr>
                         <th colSpan={5}>Procenti</th>
                     </tr>
                 </thead>
+           
                 <tbody>
                     <tr>
                         <td>
                             <input type="number"
+                            name="value7"
                                 value={inputValue7}
                                 onChange={handleChangeValue7} />
                         </td>
                         <td>Od</td>
                         <td>
                             <input type="number"
+                            name="value8"
                                 value={inputValue8}
                                 onChange={handleChangeValue8} />
                         </td>
@@ -161,6 +173,7 @@ const Odnosi = () => {
                     <tr>
                         <td className="proc">
                             <input type="number"
+                            name="value9"
                                 value={inputValue9}
                                 onChange={handleChangeValue9} />
                             %
@@ -168,6 +181,7 @@ const Odnosi = () => {
                         <td>Od</td>
                         <td>
                             <input type="number"
+                            name="value10"
                                 value={inputValue10}
                                 onChange={handleChangeValue10} />
                         </td>
@@ -180,10 +194,14 @@ const Odnosi = () => {
                 </tbody>
 
             </table>
+            <div className="calc">
+               <Digitron />
+            </div>
+            <br></br>
            {/* dodatak za 3d na dole */}
              <model-viewer
-            //   src="https://storage.googleapis.com/search-ar-edu/periodic-table/element_002_helium/element_002_helium.glb"
-              src="AutomatBiepi.glb"
+              src="https://storage.googleapis.com/search-ar-edu/periodic-table/element_002_helium/element_002_helium.glb"
+            //   src="AutomatBiepi.glb"
               shadow-intensity="1"
              
               camera-controls
