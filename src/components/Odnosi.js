@@ -6,16 +6,16 @@ import Digitron from "./Digitron"
 
 const Odnosi = () => {
 
-    const [inputValue1, setInputValue1] = useState("");
-    const [inputValue2, setInputValue2] = useState("");
-    const [inputValue3, setInputValue3] = useState("");
-    const [inputValue4, setInputValue4] = useState("");
-    const [inputValue5, setInputValue5] = useState("");
-    const [inputValue6, setInputValue6] = useState("");
-    const [inputValue7, setInputValue7] = useState("");
-    const [inputValue8, setInputValue8] = useState("");
-    const [inputValue9, setInputValue9] = useState("");
-    const [inputValue10, setInputValue10] = useState("");
+    const [inputValue1, setInputValue1] = useState();
+    const [inputValue2, setInputValue2] = useState();
+    const [inputValue3, setInputValue3] = useState();
+    const [inputValue4, setInputValue4] = useState();
+    const [inputValue5, setInputValue5] = useState();
+    const [inputValue6, setInputValue6] = useState();
+    const [inputValue7, setInputValue7] = useState();
+    const [inputValue8, setInputValue8] = useState();
+    const [inputValue9, setInputValue9] = useState();
+    const [inputValue10, setInputValue10] = useState();
 // odavde na dole ubaceno 3d gledanje
     const modelRef = React.useRef();
     const [annots, setAnnots] = useState([]);
@@ -200,8 +200,8 @@ const Odnosi = () => {
             <br></br>
            {/* dodatak za 3d na dole */}
              <model-viewer
-              src="https://storage.googleapis.com/search-ar-edu/periodic-table/element_002_helium/element_002_helium.glb"
-            //   src="AutomatBiepi.glb"
+            //   src="https://storage.googleapis.com/search-ar-edu/periodic-table/element_002_helium/element_002_helium.glb"
+              src="AutomatBiepi.glb"
               shadow-intensity="1"
              
               camera-controls
