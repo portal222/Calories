@@ -9,7 +9,7 @@ body {
     align-items: center;
     height: 60px;
     background-color: rgb(231, 246, 253);
-    border: 1px solid black;
+    border: 1px solid rgb(143, 122, 111);
     width: 97%;
     font-size: 40px;
     font-family: 'Comfortaa', cursive;
@@ -28,12 +28,14 @@ body {
 .button {
     // display: block;
     background-color: #bbb;
+    border: 1px solid rgb(143, 122, 111);
 }
 
 button {
     width: 25%;
     height: 60px;
     font-size: 30px;
+    border: 0.02px solid rgb(143, 122, 111);
     font-family: 'Comfortaa', cursive;
     background-color: rgb(241, 241, 241);
     cursor: pointer;
