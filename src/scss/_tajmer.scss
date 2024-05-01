@@ -104,6 +104,75 @@ $color05: rgb(151, 148, 211);
 
 }
 
+.sati {
+    display: flex;
+    // justify-content: baseline;
+    align-items: end;
+    padding: 0px;
+    border: 4px solid rgb(92, 91, 133);
+    border-radius: 10px;
+    height: 145px;
+    background-color: #fffce9;
+    width: 370px;
+    margin: auto;
+
+    // vertical-align: baseline;
+    .minut {
+        background-color: chocolate;
+  
+        margin: 0px;
+        width: 60px;
+        color: transparent;
+
+    }
+    .title {
+        height: 25px;
+    }
+    .box4 {
+        width: 60px;
+        height: 140px;
+        background-color: #e0f2f1;
+    }
+    .box6 {
+        width: 120px;
+        background-color: #fff3dc;
+        border: 4px solid rgb(42, 42, 125);
+    }
+
+
+
+   
+}
+.casovnik {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 3px;
+    font-weight: bold;
+}
+
+.boxBatAll {
+    height: 18px;
+    padding: 0px 10px;
+    border: solid 2px green;
+    font-size: 16px;
+    border-radius: 7px;
+    background-color: rgb(255, 210, 125);
+  
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(235, 171, 108);
+    }
+
+}
+.satovi {
+    height: 450px;
+    padding-left: 200px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+}
+
 @media screen and (max-width: 500px) {
     .container {
         max-width: 358px;
