@@ -120,6 +120,29 @@ body {
         border-color: burlywood;
 
     }
+    .recipe {
+        text-align: left;
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 18px;
+        color: #84867b;
+        width: 120px;
+    }
+    .title {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 24px;
+        padding-right: 5px;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: center;
+        // width: 300px;
+    }
+    .nameComm {
+        padding-left: 5px;
+        font-size: 20px;
+        color: black;
+        text-align: left;
+    }
 }
 
 model-viewer {
@@ -378,8 +401,8 @@ model-viewer {
     }
 
     .odnosi {
-        max-width: 358px;
-        min-width: 358px;
+        max-width: 348px;
+        min-width: 348px;
 
 
         tr {
@@ -414,6 +437,23 @@ model-viewer {
             max-width: 30px;
 
 
+        }
+        .recipe {
+            text-align: left;
+          
+            font-size: 16px;
+            color: #84867b;
+          
+        }
+        .title {
+          
+            font-size: 20px;
+         
+        }
+        .nameComm {
+            padding-left: 4px;
+            font-size: 17px;
+       
         }
     }
 

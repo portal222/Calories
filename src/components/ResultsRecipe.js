@@ -121,8 +121,8 @@ const ResultsRecipe = () => {
 
                     <tbody >
                         <tr>
-                            <td className="recipe">Name:</td>
-                            <td className="celebrity">
+                          
+                            <td className="title" colSpan={2}>
                                 {dataObj.title}
 
                             </td>
@@ -136,13 +136,22 @@ const ResultsRecipe = () => {
                             <td className="nameComm">{dataObj.servings}</td>
                         </tr>
                         <tr>
-                            <td className="recipe">Ingredients:</td>
-                            <td className="nameComm">{dataObj.ingredients}</td>
+                            <td className="recipe" colSpan={2}>Ingredients:</td>
+                        </tr>
+
+                        <tr>                            <td className="nameComm" colSpan={2}>{dataObj.ingredients.replace("|", " ").replace("|", " ").replace("|", " ")
+                            .replace("|", " ").replace("|", " ").replace("|", " ").replace("|", " ").replace("|", " ").replace("|", " ")
+                            .replace("|", " ").replace("|", " ").replace("|", " ").replace("|", " ").replace("|", " ").replace("|", " ")
+                            .replace("|", " ").replace("|", " ").replace("|", " ")
+                        }</td>
                         </tr>
 
                         <tr>
-                            <td className="recipe">Instructions:</td>
-                            <td className="nameComm">{dataObj.instructions}</td>
+                            <td className="recipe" colSpan={2}>Instructions:</td>
+                        </tr>
+
+                        <tr>
+                            <td className="nameComm" colSpan={2}>{dataObj.instructions}</td>
                         </tr>
 
 

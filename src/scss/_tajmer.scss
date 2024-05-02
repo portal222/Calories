@@ -3,6 +3,7 @@ $color02: rgb(56, 47, 217);
 $color03: rgb(87, 81, 210);
 $color04: rgb(116, 111, 210);
 $color05: rgb(151, 148, 211);
+
 .container {
     display: flex;
     flex-direction: column;
@@ -17,8 +18,8 @@ $color05: rgb(151, 148, 211);
     justify-content: center;
 
     hr {
-       
-       width: 645px;
+
+        width: 645px;
     }
 
 
@@ -36,18 +37,22 @@ $color05: rgb(151, 148, 211);
             width: 100px;
             background-color: $color01;
         }
+
         .box1 {
             width: 100px;
             background-color: $color02;
         }
+
         .box2 {
             width: 100px;
             background-color: $color03;
         }
-        .box3  {
+
+        .box3 {
             width: 100px;
             background-color: $color04;
         }
+
         .box4 {
             width: 100px;
             background-color: $color05;
@@ -66,6 +71,7 @@ $color05: rgb(151, 148, 211);
             }
 
         }
+
         .title {
             height: 22px;
             padding: 4px;
@@ -109,40 +115,66 @@ $color05: rgb(151, 148, 211);
     // justify-content: baseline;
     align-items: end;
     padding: 0px;
-    border: 4px solid rgb(92, 91, 133);
-    border-radius: 10px;
-    height: 145px;
+    // border-image-repeat: linear-gradient(#e71c05, #d7c4bd);
+    border-color: #9e9e9e;
+    border-radius: 3px;
+    border-width: 3px;
+    border-style: solid;
+    height: 120px;
     background-color: #fffce9;
-    width: 370px;
+    width: 200px;
     margin: auto;
 
     // vertical-align: baseline;
     .minut {
-        background-color: chocolate;
-  
+
+
         margin: 0px;
-        width: 60px;
+        width: 50px;
         color: transparent;
 
+    }
+
+    .dan {
+        margin: 0px;
+        width: 50px;
+        color: transparent;
+        cursor: pointer;
+
+        .content {
+            display: none;
+            font-size: 14px;
+            font-weight: lighter;
+            position: absolute;
+            min-width: 30px;
+
+            span {
+                position: relative;
+                top: -2px;
+                width: 40px;
+         padding-left: 10px;
+                box-shadow: 2px 8px 16px 0px rgba(0, 0, 0, 0.7);
+                background-color: #f9f9f9;
+                display: flex;
+                // align-content: center;
+                text-align: center;
+            }
+        }
+        &:hover .content {
+            display: block;
+            color: black;
+            text-shadow: none;
+        }
     }
     .title {
         height: 25px;
     }
-    .box4 {
-        width: 60px;
-        height: 140px;
-        background-color: #e0f2f1;
+    .sekunde {
+        width: 50px;
+        background-color: #80cbc4;
     }
-    .box6 {
-        width: 120px;
-        background-color: #fff3dc;
-        border: 4px solid rgb(42, 42, 125);
-    }
-
-
-
-   
 }
+
 .casovnik {
     text-align: center;
     font-size: 18px;
@@ -157,7 +189,7 @@ $color05: rgb(151, 148, 211);
     font-size: 16px;
     border-radius: 7px;
     background-color: rgb(255, 210, 125);
-  
+
     cursor: pointer;
 
     &:hover {
@@ -165,6 +197,7 @@ $color05: rgb(151, 148, 211);
     }
 
 }
+
 .satovi {
     height: 450px;
     padding-left: 200px;
@@ -196,6 +229,7 @@ $color05: rgb(151, 148, 211);
             .box4 {
                 width: 65px;
             }
+
             .boxBat {
                 border-radius: 5px;
             }

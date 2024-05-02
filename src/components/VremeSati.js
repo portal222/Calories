@@ -9,8 +9,8 @@ const VremeSati = () => {
     const [minuti, setMinuti] = useState();
     const [sekundi, setSekundi] = useState();
 
-    const [isOpen5, setOpen5] = useState(false)
-    const [isOpen6, setOpen6] = useState(false)
+    const [isOpenSec, setOpenSec] = useState(false)
+
 
 
     useEffect(() => {
@@ -37,64 +37,63 @@ const VremeSati = () => {
 
     return (
         <>
-        <div>
-            
-
-            <div className="sati">
-                <div >
-                    <div className="minut" style={{ height: `${sati * 5}px`, backgroundColor: "#4db6ac" }}
-                    >.</div>
-                    <div className="title">Dan</div>
-                </div>
-                <div>
-                    <div className="minut" style={{ height: `${minuti * 2}px`, backgroundColor: "#80cbc4" }}>
-                        .
-                    </div>
-                    <div className="title">Sat</div>
-                </div>
-                <div>
-                    <div className="minut" style={{ height: `${sekundi * 2}px`, backgroundColor: "#b2dfdb" }}>
-                        .
-                    </div>
-                    <div className="title">Minut</div>
-                </div>
+            <div>
 
 
-                <div
-                    style={{ width: "100px" }}>
-                    <motion.div
-                        className="box4"
+                <div className="sati">
+                    <div>
+                        <motion.div
+                        className="sekunde"
                         layout
-                        style={{ height: isOpen5 ? "116px" : "0px" }}
+                        style={{ height: isOpenSec ? "117px" : "0px" }} 
                         transition={{
                             ease: "easeInOut",
                             type: "spring",
                             duration: 1,
-                            repeat: Infinity,
-
-                        }}
-                    />
-                    <div className="title">
-                        Sekunda
+                            repeat: Infinity
+                        }}/>
+                        
                     </div>
-                   
+
+
+                    <div>
+                        <div className="dan" style={{ height: `${sekundi * 2}px`, backgroundColor: "#4db6ac" }}>
+
+                            .
+                            <span className="content">
+                                <span>{sekundi}s</span></span>
+                        </div>
+
+                    </div>
+                    <div>
+                        <div className="dan" style={{ height: `${minuti * 2}px`, backgroundColor: "#26a69a" }}>
+                            .
+                            <span className="content">
+                                <span>{minuti}m</span></span>
+                        </div>
+
+                    </div>
+                    <div >
+                        <div className="dan" style={{ height: `${sati * 5}px`, backgroundColor: "#009688" }}
+                        >.
+                            <span className="content">
+                                <span>{sati}h</span></span>
+                        </div>
+
+                    </div>
 
 
                 </div>
-                <div>
-                    <div className="casovnik">
-                    {sati + ":" + minuti + ":" + sekundi}
-                    </div>
-                     <div
-                     
-                      
-                        onClick={() => [setOpen5(!isOpen5)]}
-                        className="boxBatAll">
-                        Sekunda</div>
-                </div>
+                <div style={{
+                    width: "206px", height: "10px", color: "transparent", backgroundColor: "#80cbc4",
+                    margin: "auto", cursor: "pointer"
+                }}
+                    onMouseOver={() => setOpenSec(!isOpenSec)}>
+                    .
 
+                </div>
+          
             </div>
-        </div>
         </>
     )
 }
